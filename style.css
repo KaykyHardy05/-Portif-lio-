@@ -6,6 +6,15 @@ body{
     font-family: Sans-serif;
     font-size: 20px
 }
+.Maains-Referencia{
+    color:rgb(22,23,27);
+    height: 120px;
+}
+abbr{
+    text-decoration: none;
+    color: rgb(200, 208, 215);
+}
+
 
 
 
@@ -73,24 +82,27 @@ nav{/*Opções que redirecionam para seu conteúdo*/
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(42,43,57);
-    margin: 140px auto;
+    margin: 20px auto;
     height: 150px;
+
+    border-radius: 15px;
 
     padding: 10px 25px;
     h1{
-        margin-left: 15px;
+        margin: 0 0 6px 15px;
         font-size: larger;
         text-transform: uppercase;
         font-weight: bold;
-        rt{
-            font-size: 11px;
-        }
+        
+
+       
     }
     p{
         font-size: 16px;
     }
 
 }
+
 #HOME{
     
     width: 550px;
@@ -106,4 +118,9 @@ nav{/*Opções que redirecionam para seu conteúdo*/
     }
 }
 
-
+#SOBREMIM{
+    width: 550px;
+    h1{
+        height: 24px;
+    }
+}

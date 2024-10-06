@@ -1,18 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Parte geral do código*/
 /*para funções que se repetiram durante o código*/
 body{
-    background-color: rgb(22,23,27);
+    --BackColor: rgb(22,23,27);
+    background-color: var(--BackColor);
     color: aliceblue;
     font-family: Sans-serif;
-    font-size: 20px
+    font-size: 22px;
 }
 .Maains-Referencia{
-    color:rgb(22,23,27);
+    color:var(--BackColor);
     height: 120px;
+    margin-bottom: 20px;
 }
 abbr{
     text-decoration: none;
-    color: rgb(200, 208, 215);
+    color: rgb(180, 188, 195);
 }
 
 
@@ -76,51 +96,94 @@ nav{/*Opções que redirecionam para seu conteúdo*/
 
 
 
-/*Main / Corpo da pagina*/
+/*Main || Corpo da pagina*/
 
 .Mains{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(42,43,57);
-    margin: 20px auto;
-    height: 150px;
+    --BackColor:rgb(42,43,57); 
 
+    display: flex;
+    background-color: var(--BackColor);
+    border: solid var(--BackColor);
+    border-width: 16px 9px;
     border-radius: 15px;
 
-    padding: 10px 25px;
+    /* Texto */
     h1{
-        margin: 0 0 6px 15px;
-        font-size: larger;
-        text-transform: uppercase;
-        font-weight: bold;
-        
-
-       
+        margin: 5px 0 8px 10px;
+        padding: 5px 0 0 5px ;
+        border: solid rgb(22,23,27);
+        border-width: 10px 5px 5px;
+        border-radius: 10px;
     }
     p{
         font-size: 16px;
     }
-
 }
 
 #HOME{
-    
     width: 550px;
-    
-    #Texto_HOME{
+    margin: auto; /* CENTRALIZAR */
+    padding: 0 20px 20px;
+
+    h1{
+        width: 130px;
+    }
+    #HOME_Aling{
         width: 500px;
-        #Indentificar1{
-            margin-left: 5px;
-        }
-        #Indentificar2{
-            margin-top: 13px;
-        }
+    }
+    #Indentificar1{
+        padding: 8px 0 0 10px;
     }
 }
 
 #SOBREMIM{
-    width: 550px;
+    width: 600px;
+    display: grid;
+    margin: auto;
+    padding: 0 20px 20px;
+
     h1{
-        height: 24px;
+        width: 150px;
+    }
+
+    #SOBREMIM_Aling{
+        display: grid;
+        grid-template-columns:176px 1fr; /* define o tamanho do espaço do
+grid na horizontal. coluna1: 176 pixels || coluna2: 1fr (não sei que porra de medida é essa)*/
+
+        width: 600px;
+        padding: 10px;
+
+        #SOBREMIM_Texto{
+            width: 400px;
+            flex-wrap: nowrap;
+        }
+        #SOBREMIM_Texto_Pos_Imagem{
+            display: block;
+            width: 600px;
+        }
+    }
+
+
+    #Foto_Creator{
+        border: 8px solid rgb(12,13,27);
+        border-radius: 25px 45% 65px 25px;
+
+    }
+    #Foto_Creator2{
+        height: 200px;
+        border: solid rgb(12,13,27);
+        border-width: 2px 5px 15px;
+        border-radius: 35px 46% 15px 15px;
+        background-color: rgb(42,43,57);
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(150, 158, 255);
+    }
+
+    p{
+        margin-top: 10px;
     }
 }
